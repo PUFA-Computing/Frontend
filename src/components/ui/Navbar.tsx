@@ -160,7 +160,7 @@ export default function Navbar() {
                     {isMobileMenuOpen && (
                         <div className="absolute left-0 right-0 top-24 bg-white shadow-md lg:hidden">
                             <nav aria-label="Global" className="p-4">
-                                <ul className="text-md flex flex-col items-center gap-6 font-medium text-black">
+                                <ul className="text-md flex flex-col items-start gap-6 font-medium text-black md:items-center">
                                     <li>
                                         <Link href="/">Home</Link>
                                     </li>
@@ -198,14 +198,14 @@ export default function Navbar() {
                                             <>
                                                 <div className="mb-5">
                                                     <Link
-                                                        className="my-6 mr-3 rounded-md bg-white px-2 py-2.5 font-medium text-black md:px-5"
+                                                        className="my-6 mr-3 rounded-md bg-white  font-medium text-black md:px-5"
                                                         href="/auth/signin"
                                                     >
                                                         Log in
                                                     </Link>
                                                 </div>
                                                 <Link
-                                                    className="rounded-md bg-white px-2 py-2.5 font-medium text-black"
+                                                    className="my-6 rounded-md bg-white font-medium text-black"
                                                     href="/auth/signup"
                                                 >
                                                     Sign up

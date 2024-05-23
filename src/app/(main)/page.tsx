@@ -20,7 +20,7 @@ export const dynamic = "force-dynamic";
 
 export default async function Index() {
     return (
-        <div className="min-h-screen text-[#353535]">
+        <div className="min-h-screen   text-[#353535]">
             <div>
                 <Image
                     src={BGImage}
@@ -33,11 +33,11 @@ export default async function Index() {
             </div>
             <section
                 id="introduction"
-                className="container mx-auto -mt-24 sm:-mt-32 md:-mt-48 md:px-[5rem] lg:-mt-64 xl:-mt-96"
+                className="container mx-auto -mt-24 px-[3rem] sm:-mt-32 md:-mt-48 md:px-[5rem] lg:-mt-64 xl:-mt-96"
             >
                 <Image
                     alt="PUFA Photo"
-                    className="mx-auto my-12 h-48 rounded-2xl object-cover md:h-96"
+                    className="mx-auto mb-8 mt-12 h-48 rounded-2xl object-cover md:my-12 md:h-96"
                     width={1080}
                     height={720}
                     src={bghomepage}
@@ -47,7 +47,7 @@ export default async function Index() {
                src="../member.jpg"
                alt="PUMA Photo"
             /> */}
-                <div className="space-y-6 px-8 text-justify text-base md:px-24 md:text-xl">
+                <div className="space-y-6 text-justify text-base md:px-24 md:text-xl">
                     <p>
                         PUFA Computing stands for President University's Faculty
                         Association of Computing, serving as a dynamic platform
@@ -75,7 +75,7 @@ export default async function Index() {
             </section>
 
             {/* programs */}
-            <section className="my-[10rem] flex flex-col items-center space-y-8 md:px-[5rem]">
+            <section className="my-[10rem] flex flex-col items-center space-y-8 px-[3rem] md:px-[5rem]">
                 <div className="border-l-4 border-[#3C99DC] pl-4">
                     <h1 className="text-[1.5rem] font-[600]">Study Programs</h1>
                 </div>
@@ -95,7 +95,7 @@ export default async function Index() {
             </section>
 
             {/* cabinet anagata */}
-            <section className="my-[10rem] flex flex-col items-center space-y-8 md:px-[5rem]">
+            <section className="my-[10rem] flex flex-col items-center space-y-8 px-[3rem] md:px-[5rem]">
                 <div className="border-l-4 border-[#1FA820] pl-4">
                     <h1 className="text-[1.5rem] font-bold">
                         Cabinet 2023/2024
@@ -111,7 +111,7 @@ export default async function Index() {
                         width="256"
                     />
 
-                    <div className="flex max-w-[20rem] flex-col gap-8 rounded-lg border-2 border-[#1FA820] px-8 py-12 md:max-w-[38rem]">
+                    <div className="flex max-w-[17rem] flex-col gap-8 rounded-lg border-2 border-[#1FA820] px-8 py-12 md:max-w-[38rem]">
                         <div className="flex items-center gap-4">
                             <h1 className="text-[1.2rem] font-[600]">
                                 ANAGATA CABINET
@@ -139,7 +139,7 @@ export default async function Index() {
             </section>
 
             {/* event section */}
-            <section className="flex select-none flex-col items-center space-y-8 md:space-y-8 md:px-[5rem]">
+            <section className="my-[10rem] flex select-none flex-col items-center space-y-8 px-[3rem] md:space-y-8 md:px-[5rem]">
                 <div className="border-l-4 border-[#E50D0D] pl-4">
                     <h1 className="text-[1.5rem] font-[600]">
                         Computing Events
@@ -150,7 +150,7 @@ export default async function Index() {
                     Discover the latest updates on events in our faculty.
                 </h1>
 
-                <EventSection />
+                {/* <EventSection /> */}
 
                 <Link
                     href={"/events"}
@@ -163,7 +163,7 @@ export default async function Index() {
             {/* news */}
             <section
                 id="news"
-                className="max-h-xl mx-auto max-w-7xl space-y-12 p-5 text-center md:px-[5rem]"
+                className="max-h-xl mx-auto max-w-7xl space-y-12 p-5 px-[3rem]  text-center md:px-[5rem]"
             >
                 {/*Coming Soon*/}
                 <h2 className="text-2xl font-bold">
@@ -187,7 +187,7 @@ export default async function Index() {
 
             <section
                 id="compreciacion"
-                className="max-h-xl mx-auto my-32 max-w-7xl space-y-8 p-5 text-center"
+                className="max-h-xl mx-auto my-[10rem] max-w-7xl space-y-8 px-[3rem] text-center md:px-[5rem]"
             >
                 <h2 className="text-2xl font-bold">
                     <span className="mr-4 border-l-4 border-l-[#AF95FF]"></span>
@@ -209,10 +209,12 @@ export default async function Index() {
             </section>
 
             {/* store */}
-            <section className="my-[10rem] flex flex-col items-center space-y-6 md:space-y-12">
+            <section className="my-[10rem] flex flex-col items-center space-y-6 px-[3rem] md:space-y-12 md:px-[5rem]">
                 {/*Coming Soon*/}
                 <div className="border-l-4 border-[#BA704F] pl-4">
-                    <h1 className="text-[1.5rem] font-[600]">Computing Store</h1>
+                    <h1 className="text-[1.5rem] font-[600]">
+                        Computing Store
+                    </h1>
                 </div>
 
                 <h1 className="text-center">
@@ -229,7 +231,7 @@ export default async function Index() {
             {/* Faq */}
             <section
                 id="faq"
-                className="max-h-xl mx-auto max-w-7xl space-y-8 p-5  md:px-[5rem]"
+                className="max-h-xl mx-auto my-[10rem] max-w-7xl space-y-8 p-5 px-[3rem]  md:px-[5rem]"
             >
                 <div className="items-justify container mx-auto flex flex-col rounded-lg border border-black bg-white px-4 py-8 md:p-8">
                     <div>
